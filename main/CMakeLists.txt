@@ -1,4 +1,12 @@
 idf_component_register(
-                    SRCS "main.c"
-                    INCLUDE_DIRS "."
+                    SRCS
+                        "main.c"
+                        "./Wifi/wifi.c"
+                        "./Serial/serial.c"
+                        "./Camera/camera.c"
+                    INCLUDE_DIRS
+                        "./Wifi"
+                        "./Serial"
+                        "./Camera"
+                        "."
 )
